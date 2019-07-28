@@ -1,0 +1,16 @@
+## create new container or mount new folder:
+
+docker run -it -v $(pwd):/opt python:3.7.3-stretch /bin/bash
+
+## list
+docker ps -a
+
+## start and login
+docker start clever_varahamihira
+docker exec -it clever_varahamihira /bin/bash
+
+## stop
+docker stop clever_varahamihira
+
+## delete
+docker rm clever_varahamihira
